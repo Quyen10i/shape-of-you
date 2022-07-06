@@ -1,0 +1,102 @@
+-- Sheet for Rondo Alla Turca by Wolfgang Amadeus Mozart
+
+shared.stop = true -- stops the player at any time if true
+-- CONFIG:
+shared.ftime = 2*60 + 15 -- time in seconds for the song to finish (extended by |)
+shared.delay = nil -- delay overides the ftime
+shared.tempo = nil -- tempo overides the delay
+
+shared.scr = [[ [eup] | [eus] | [eup] - [9ep] | [9es] | [9ep] -
+[qtp] | [qts] | [qtp] - [wya] | [wyp] | [wyo] -
+[eup] | [eus] | [eup] - [9ep] | [9es] | [9ep] -
+[qtp] | [qts] | [qtp] - [wya] | [wyp] | [wyo] p
+[eus] - s [eus] s s [eu] s [9e] s s [9e] s - [9es] s
+[qts] - s [qt] d f [qt] f [wy] | [wy] | [wy] -
+[euh] d f [euf] - f [eu] f [9ed] d d [9ef] d - [9ed] s
+[qtd] - d [qtd] d s [qt] p [wy] | [wy] | [wy] p
+[euf] f f [euf] f f [euf] f [9ef] f f [9ef] - f [9e] f
+[qth] - f [qtf] d d [qts] f [wy] | [wy] d s [wys] s
+[eus] | [euh] - f [euf] f [9ed] d d [9ed] - d [9e] d
+[qtd] - d [qt] d - [qts] p [wy] f f [wyf] h j [wyj] -
+[euj] - j [eu] j - [euh] - [9ej] - x [9e] z - [9e] -
+[qtl] z - [qtx] z - [qtl] - [wyj] - l [wy] x z [wyz] -
+[euj] | [eu] v z [eux] - [9ez] l l [9e] j - [9e] -
+[qtl] z - [qtx] z - [qtl] - [wyz] - l [wy] j - [wyj] -
+[euj] | [eu] j - [euh] - [9ej] - x [9e] z - [9e] -
+[qtl] z - [qtx] z - [qtl] - [wyj] - l [wy] x z [wyz] -
+[euj] | [eu] v z [eux] - [9ez] l l [9e] j - [9ej] -
+[qtv] z x [qt] z l [qtl] - [wyj] - f - h - j -
+[eu] | [eu] | [eul] z [9ex] - z [9el] l - [9ez] -
+[qtz] | [qt] - j [qtl] z [wyx] - z [wyl] l - [wyz] -
+[euj] | [eu] - j [eul] z [9ex] - j [9e] l - [9ez] -
+[qtz] | [qt] | [qtl] z [wyx] - z [wyl] z - [wy] j
+[eu] | [eu] | [eul] - [9ex] - v [9ex] z - [9el] -
+[qtz] | [qt] - j [qtl] z [wyx] - z [wyl] l - [wyj] z
+[euj] - j [euj] j j [eul] z [9ex] - j [9e] l - [9ez] -
+[qtz] | [qt] | [qtl] z [wyx] - z [wyl] z - [wy] j
+[eufj] - [fj] [eu] [fl] - [eufl] - [9egz] - [gz] [9e] [gx] - [9egx] -
+[qt] | [qt] | [qtl] z [wyx] - z [wyl] z - [wy] j
+[eufj] - [fj] [eu] [fl] - [eufl] - [9egz] - [gz] [9e] [gx] - [9egx] -
+[qt] | [qt] | [qtl] z [wyx] - z [wyl] z - [wy] j
+[eufj] - [fj] [eu] [fl] - [eufl] - [9egz] - [gz] [9e] [gx] - [9egx] -
+[qt] | [qt] | [qtl] z [wyx] - z [wyl] z - [wy] j
+[eu] - j [euj] j j [eul] z [9ez] - j [9e] l - [9ez] -
+[qtz] | [qt] | [qtl] z [wyx] - z [wyl] l - [wyz] -
+[euj] l - [eul] - l [eul] l [9el] l l [9el] - l [9el] l
+[qtl] - l [qt] z x [qt] x [wy] | [wy] - x [wyx] x
+[euv] - x [euz] - z [euz] z [9ez] z z [9ez] - z [9ez] z
+[qtz] - z [qtz] z l [qtl] l [wy] | [wy] - x [wyx] x
+[eub] b b [eub] b v [eux] - [9ev] x x [9ex] z z [9ez] l
+[qtz] z z [qtz] z z [qtl] x [wy] | [wy] - l [wyl] l
+[eul] l l [eux] - x [eu] - [9el] l l [9ex] - x [9ex] x
+[qtz] z z [qtz] z z [qtl] l [wy] f - [wyf] h j [wyj] -
+[euj] - j [eu] j - [euh] - [9ej] - x [9e] z - [9e] -
+[qtl] z - [qtx] z - [qtl] - [wyj] - l [wy] x z [wyz] -
+[euj] | [eu] v z [eux] - [9ez] l l [9e] j - [9e] -
+[qtl] z - [qtx] z - [qtl] - [wyz] - l [wy] j - [wyj] -
+[euj] | [eu] j - [euh] - [9ej] - x [9e] z - [9e] -
+[qtl] z - [qtx] z - [qtl] - [wyj] - l [wy] x z [wyz] -
+[euj] | [eu] v z [eux] - [9ez] l l [9e] j - [9ej] -
+[qtv] z x [qt] z l [qtl] - [wyj] - f - h - j -
+[eu] | [eu] | [eul] z [9ex] - z [9el] l - [9ez] -
+[qtz] | [qt] j [qtl] z [wyx] - z [wyl] l - [wyz] -
+[euj] | [eu] - j [eul] z [9ex] - j [9e] l - [9ez] -
+[qtz] | [qt] | [qtl] z [wyx] - z [wyl] z - [wy] j
+[eu] | [eu] | [eul] - [9ex] - v [9ex] z - [9el] -
+[qtz] | [qt] - j [qtl] z [wyx] - z [wyl] l - [wyj] z
+[euj] - j [euj] j j [eul] z [9ex] - j [9e] l - [9ez] -
+[qtz] | [qt] | [qtl] z [wyx] - z [wyl] z - [wy] j
+[eufj] - [fj] [eu] [fl] - [eufl] - [9egz] - [gz] [9e] [gx] - [9egx] -
+[qt] | [qt] | [qtl] z [wyx] - z [wyl] z - [wy] j
+[eufj] - [fj] [eu] [fl] - [eufl] - [9egz] - [gz] [9e] [gx] - [9egx] -
+[qt] | [qt] | [qtl] z [wyx] - z [wyl] z - [wy] j
+[eufj] - [fj] [eu] [fl] - [eufl] - [9egz] - [gz] [9e] [gx] - [9egx] -
+[qt] | [qt] | [qtl] z [wyx] - z [wyl] z - [wy] j
+[eu] - j [euj] j j [eul] z [9ez] - j [9e] l - [9ez] -
+[qtz] | [qt] | [qtl] z [wyx] - z [wyl] l - [wyz] -
+j - x x - z - l z - x - j - j |
+x x - z - l z - l - j - j |
+x x - z - l z - x - j - j |
+x x - z - l z - l - j - j -
+[up] - x [upx] - z [up] l [ypz] - x [yp] j - [ypj] -
+[ip] - x [ipx] - z [ip] l [yoz] - l [yo] j - [yoj] -
+[up] - x [upx] - z [up] l [ypz] - x [yp] j - [ypj] -
+[ip] - x [ipx] - z [ip] l [yoz] - l [yo] j - [yoj] |
+x x - z - l z - x - j - j -
+[eu] | [eu] | [eul] z [9ex] - z [9el] l - [9ez] -
+[qtz] | [qt] - j [qtl] z [wyx] - z [wyl] l - [wyz] -
+[euj] | [eu] - j [eul] z [9ex] - j [9e] l - [9ez] -
+[qtz] | [qt] | [qtl] z [wyx] - z [wyl] z - [wy] j
+[eu] | [eu] | [eul] - [9ex] - v [9ex] z - [9el] -
+[qtz] | [qt] - j [qtl] z [wyx] - z [wyl] l - [wyj] z
+[euj] - j [euj] j j [eul] z [9ex] - j [9e] l - [9ez] -
+[qtz] | [qt] | [qtl] z [wyx] - z [wyl] z - [wy] j
+[eufj] - [fj] [eu] [fl] - [eufl] - [9egz] - [gz] [9e] [gx] - [9egx] -
+[qt] | [qt] | [qtl] z [wyx] - z [wyl] z - [wy] j
+[eufj] - [fj] [eu] [fl] - [eufl] - [9egz] - [gz] [9e] [gx] - [9egx] -
+[qt] | [qt] | [qtl] z [wyx] - z [wyl] z - [wy] j
+[eufj] - [fj] [eu] [fl] - [eufl] - [9egz] - [gz] [9e] [gx] - [9egx] -
+[qt] | [qt] | [qtl] z [wyx] - z [wyl] z - [wy] j
+[eu] - j [euj] j j [eul] z [9ez] - j [9e] l - [9ez] -
+[qtz] | [qt] | [qtl] z [9wrx] - z l z - z -
+j ]]
